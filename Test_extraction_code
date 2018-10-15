@@ -1,0 +1,3 @@
+martic<-read_excel("Matrices_461_470.xlsx")
+
+Matrix<-martic[,0:22]
