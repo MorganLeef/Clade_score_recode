@@ -17,8 +17,16 @@ data_tb <- x_data[2:56,3:22]
 #Extract the species names into their own vector
 species <- x_data[2:55,2]
 
-#Create a new "group" vector that contains repeats for all groups
-group <- rep((c(3,1) times = 3), (c(6,1) times = 16), (c(22,1) times = 3), (c(25,1) times = 4), (c(29,1) times = 9), (c(38,1) times = 19))
+#Extract the names for the group and unlist makes tbl not a list
+Names<-unlist(x_data[1:55,1]) 
+
+#Got rid of the N/A values in the column.
+Groupnames<-na.omit(Names)
+
+#This creates a vector named groups to have all of the groupnames from column 1 of x_data.   
+groups <- rep(Groupnames, c(3,16,3,4,9,19))
 
 #Exracting the first column from the matrix and naming it "V1"
 V1 <- data_tb[,1]
+
+
