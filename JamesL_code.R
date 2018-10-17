@@ -1,5 +1,8 @@
+#R script that reads JL's excel file and extracts the first column. 
+#Sets up the working directory.
 setwd ("~/desktop/ESDA/GitHub_Ex/GitHubEx2")
 
+#Adds the readxl to the library. So that it can be used for the script.
 library(readxl)
 
 #Load JL's first file "Matrices 461-470(1).xlsx" into R
