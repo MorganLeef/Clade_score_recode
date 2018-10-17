@@ -1,8 +1,0 @@
-#Reads the excel file into R.
-martic<-read_excel("Matrices_461_470.xlsx")
-
-#Activates readxl in R so it can be used.
-library("readxl")
-
-#This is test code to see how it extracts. 
-Matrix<-martic[,0:22]
