@@ -17,16 +17,11 @@ data_tb <- x_data[2:56,3:22]
 #Extract the species names into their own vector
 species <- x_data[2:55,2]
 
-#Extract the names for the group and unlist makes tbl not a list
-Names<-unlist(x_data[1:55,1]) 
+#Load "tidyr" package to use "fill"
+library(tidyr)
 
-#Got rid of the N/A values in the column.
-Groupnames<-na.omit(Names)
-
-#This creates a vector named groups to have all of the groupnames from column 1 of x_data.   
-groups <- rep(Groupnames, c(3,16,3,4,9,19))
+#Use "fill" to occupy empty cells with group names
+group <- x_data %>% fill(3,1)
 
 #Exracting the first column from the matrix and naming it "V1"
 V1 <- data_tb[,1]
-
-
