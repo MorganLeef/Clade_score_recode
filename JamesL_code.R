@@ -26,7 +26,7 @@ groupnames<-na.omit(names)
 #This creates a vector named groups to have all of the groupnames from column 1 of x_data.   
 rep.groups <- rep(groupnames, c(3,16,3,4,9,19))
 
-#This code takes away the X__* name from the rep.groups vector.  
+#This code takes away the X__# name from the rep.groups vector.  
 groups<-unname(rep.groups)
 
 #Exracting the first column from the matrix and naming it "V1"
