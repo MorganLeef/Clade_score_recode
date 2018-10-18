@@ -7,7 +7,6 @@ Included:
     Challenges
     Prerequisites necessary
 
-<<<<<<< HEAD
 Assignment Details:
 The purpose of this project is to automate the preparation of James Lamdsdell's data files for reorganization.
 
@@ -124,8 +123,3 @@ The species names are:
 •	Crenatolimulus_paluxyensis
 •	Limulus_coffini
 •	Limulus_polyphemus
-
-
-
-
->>>>>>> 3812150102362a8b2d1ac5421b4f2b2b6d18bbaf
