@@ -4,16 +4,27 @@ ESDA Github Exercise 2 (James L. Problem)
 
 This code will use the R package readxl to read all of the data contained in XL files given to us by James L. The code will read the XL files and extracts the first column, species, excels sheets and group names. 
 
+
+
 Functions/package used in this R script:
 
+
 Setwd ()= setting the working directory.
+
 Library ()=adding the new packaging to use in the code.
+
 Read_xlsx()=this part of the code that reads the excel file. 
+
 Excel_sheets()=this part of the code help create a vector for all the sheet names. 
+
 Unlist()= this function transforms the tbl to not be a list.
+
 Na.omit()=this function omits all of the N/A from the column. 
+
 Rep()=this replicates the information in the () as many times as someone would want.
+
 Unnamed()=this function removes or “unnamed” the top name X__#.a 
+
     
 
 Data background:
