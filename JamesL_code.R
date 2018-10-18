@@ -1,8 +1,8 @@
-#R script that reads JL's excel file and extracts the first column. 
+#R script that reads JL's excel file and extracts information including first column, species name, and group name.    
 #Sets up the working directory.
 setwd ("~/desktop/ESDA/GitHub_Ex/GitHubEx2")
 
-#Adds the readxl to the library. So that it can be used for the script.
+#Adds the readxl to the library. 
 library(readxl)
 
 #Load JL's first file "Matrices 461-470(1).xlsx" into R
