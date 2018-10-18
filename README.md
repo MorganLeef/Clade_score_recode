@@ -6,6 +6,9 @@ This code will use the R package readxl to read all of the data contained in XL 
 
 
 
+
+
+
 Functions/package used in this R script:
 
 
@@ -26,6 +29,10 @@ Rep()=this replicates the information in the () as many times as someone would w
 Unnamed()=this function removes or “unnamed” the top name X__#.a 
 
     
+
+
+
+
 
 Data background:
 
