@@ -1,5 +1,5 @@
-# GitHubEx2
-ESDA Github Exercise 2 (James L. Problem)
+# JL Problem EX 1
+ESDA James L. Problem EX 1
 
 Included:
   Assignment description
@@ -8,11 +8,11 @@ Included:
     Prerequisites necessary
 
 Assignment Details:
-The purpose of this project is to automate the preparation of James Lamdsdell's data files for reorganization.
+The purpose of this project is to automate the preparation of James Lamdsdell's xlsx files for recoding.
 
 Getting Started:
   For this stage of the project, vectors and matrices are extracted from the original files, so that they can be inserted into functions for the second stage of the project. 
-  This code extracts the numerical data as a matrix, fills empty cells that would inhibit the use of some functions, and enables the extraction of any column so that the numeric values can be edited. 
+  This code extracts the numerical data from the xlsx as a matrix, fills empty cells that would inhibit the use of some functions, and enables the extraction of any column so that the numeric values can be edited. 
 
   Prerequisites:
     The "readxl" and "tidyr" R packages are required to successfully run this code.	
@@ -21,7 +21,7 @@ Authors:
 Morgan Leef
 Amanda Adams
 =======
-This code will use the R package readxl to read all of the data contained in XL files given to us by James L. The code will read the XL files and extracts the first column, species, excels sheets and group names. 
+This code will use the R package readxl to read all of the data contained in XLS files given to us by James L.(Examples included here are...) The code will read the XL files and extracts the first column, species, excels sheets and group names. 
 
 
 
