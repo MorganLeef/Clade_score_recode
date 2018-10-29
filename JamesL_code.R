@@ -23,5 +23,6 @@ group <- x_data %>% fill(3,1)
 
 #Exracting the first column from the matrix and naming it "V1"
 V1 <- data_tb[,1]
+
 #unlisting the tb. 
-Names<-unlist(V1[1:55,1])
+V1_un<-unlist(V1[1:55,1])
