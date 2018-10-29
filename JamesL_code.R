@@ -26,3 +26,6 @@ V1 <- data_tb[,1]
 
 #unlisting the tb. 
 V1_un<-unlist(V1[1:55,1])
+
+#Changes the values for it to change. I changed 1's to 0 and everything else to -999. 
+recode(V1_un,"c(1)='0';else='-999'")
