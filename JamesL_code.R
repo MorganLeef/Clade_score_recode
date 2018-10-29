@@ -1,6 +1,4 @@
-#R script that reads JL's excel file and extracts information including first column, species name, and group name.    
-#Sets up the working directory.
-setwd ("~/desktop/ESDA/GitHub_Ex/GitHubEx2") ##NOT NEEDED SINCE YOU HAVE A PROJECT
+#R script that reads JL's excel file and extracts information including first column, species name, and group name.   
 
 #Adds the readxl to the library. 
 library(readxl)
