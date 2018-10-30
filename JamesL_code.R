@@ -29,3 +29,14 @@ V1_un<-unlist(V1[1:55,1])
 
 #Changes the values for it to change. I changed 1's to 0 and everything else to -999. 
 recode(V1_un,"c(1)='0';else='-999'")
+
+#Pulls V1 data from the tibble to a new vector
+V1vec <- pull(V1,1)
+
+#Finds 1's and 2's in row 55 and prints 0 and 1 in their place
+if(V1vec [55] == 1){
+  print(paste("0"))
+} else if(V1vec [55] == 2){
+  print(paste("1"))
+}
+
