@@ -15,13 +15,13 @@ Getting Started:
   This code extracts the numerical data from the xlsx as a matrix, fills empty cells that would inhibit the use of some functions, and enables the extraction of any column so that the numeric values can be edited. 
 
   Prerequisites:
-    The "readxl" and "tidyr" R packages are required to successfully run this code.	
+    The "readxl", "tidyr" and "dplyr" R packages are required to successfully run this code.	
 
 Authors:
 Morgan Leef
 Amanda Adams
 =======
-This code will use the R package readxl to read all of the data contained in XLS files given to us by James L.(Examples included here are...) The code will read the XL files and extracts the first column, species, excels sheets and group names. 
+This code will use the R package readxl to read all of the data contained in XLS files given to us by James L.(Examples included here are...) The code will read the XL files and extracts the first column, species, excels sheets and group names. Then using a pulled first collumn to recode the collumns.  
 
 
 
@@ -31,21 +31,17 @@ This code will use the R package readxl to read all of the data contained in XLS
 Functions/package used in this R script:
 
 
-Setwd ()= setting the working directory.
-
 Library ()=adding the new packaging to use in the code.
 
 Read_xlsx()=this part of the code that reads the excel file. 
 
 Excel_sheets()=this part of the code help create a vector for all the sheet names. 
 
-Unlist()= this function transforms the tbl to not be a list.
+pull()= pulling the data from tibble and turing it into a vector.
 
 Na.omit()=this function omits all of the N/A from the column. 
 
 Rep()=this replicates the information in the () as many times as someone would want.
-
-Unnamed()=this function removes or “unnamed” the top name X__#.a 
 
     
 
