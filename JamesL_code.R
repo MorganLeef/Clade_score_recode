@@ -39,4 +39,5 @@ if(V1vec [55] == 1){
 } else if(V1vec [55] == 2){
   print(paste("1"))
 }
+#Above only prints so we need to recode. dplyr has a recod value fuction. Need to use=recode(.x, ..., .default = NULL, .missing = NULL)
 
