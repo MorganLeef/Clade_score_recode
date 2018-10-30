@@ -25,10 +25,10 @@ group <- x_data %>% fill(3,1)
 V1 <- data_tb[,1]
 
 #unlisting the tb. 
-V1_un<-unlist(V1[1:55,1])
+#V1_un<-unlist(V1[1:55,1]) creates named list. 
 
 #Changes the values for it to change. I changed 1's to 0 and everything else to -999. 
-recode(V1_un,"c(1)='0';else='-999'")
+#recode(V1_un,"c(1)='0';else='-999'")
 
 #Pulls V1 data from the tibble to a new vector
 V1vec <- pull(V1,1)
