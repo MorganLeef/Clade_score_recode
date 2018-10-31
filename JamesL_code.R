@@ -24,20 +24,35 @@ group <- x_data %>% fill(3,1)
 #Exracting the first column from the matrix and naming it "V1"
 V1 <- data_tb[,1]
 
-#unlisting the tb. 
-#V1_un<-unlist(V1[1:55,1]) creates named list. 
+#James L Problem Part 2
 
-#Changes the values for it to change. I changed 1's to 0 and everything else to -999. 
-#recode(V1_un,"c(1)='0';else='-999'")
+library("dplyr")
 
-#Pulls V1 data from the tibble to a new vector
-V1vec <- pull(V1,1)
+#Changes the column header "1" to "A" so it can be called.
+colnames(V1)[colnames(V1)=="1"] <- "A"
 
-#Finds 1's and 2's in row 55 and prints 0 and 1 in their place
-if(V1vec [55] == 1){
-  print(paste("0"))
-} else if(V1vec [55] == 2){
-  print(paste("1"))
+#Checks row 55 for 1's and 2's, and if present, changes the values of the entire column to 0.
+if(V1 [55,] == 1){
+  V1$A<-recode(V1$A,"1='0'")
+} else if(V1 [55,] == 2){
+  V1$A<-recode(V1$A,"2='0'")
 }
-#Above only prints so we need to recode. dplyr has a recod value fuction. Need to use=recode(.x, ..., .default = NULL, .missing = NULL)
 
+#Checks for existing zeroes, and if present, changes the zeroes to whatever value is in template row 55
+if(V1 [55,1] != 0){
+  V1$A<-recode(V1$A,"0='[55,1]'")
+}
+
+#Changes all remaining twos to -1
+if(V1 [,] == 2){
+  V1$A<-recode(V1$A,"2='1'")
+}
+  
+
+
+
+
+#crap
+V1$A<-recode(V1$A,"c(1,2)='0'")
+#kinda works
+V1[55,1] <- ifelse(V1[55,1] == "2", 0, ifelse(V1[55,1] == "1", 0, ifelse(V1[55,1] == "0", 0)))
