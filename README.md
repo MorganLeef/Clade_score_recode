@@ -1,19 +1,26 @@
-# JL Problem EX 1
-ESDA James L. Problem EX 1
+ESDA James L. Problem EX
 
 Included:
   Assignment description
+  File Description
   Getting Started
     Challenges
     Prerequisites necessary
 
 Assignment Details:
-The purpose of this project is to automate the preparation of James Lamdsdell's xlsx files for recoding.
+The purpose of this project is to automate the preparation of James Lamdsdell's .xlsx files for recoding.
+
+File Description:
+These Excel files (Matrices 461-470.xlsx) consist of multiple sheets of numerical matrix data that will be recoded based on a template "Ancestor" row on the bottom of each sheet.
 
 Getting Started:
   For this stage of the project, vectors and matrices are extracted from the original files, so that they can be inserted into functions for the second stage of the project. 
   This code extracts the numerical data from the xlsx as a matrix, fills empty cells that would inhibit the use of some functions, and enables the extraction of any column so that the numeric values can be edited. 
 
+  The second stage of the project implements code that will be tested on a single column of the data, assuring that it will perform the desired tasks accordingly. This involves:
+  1.)Searching the template row for a value of one or two, and when found, the code will replace all the matching values in the corrosponding column with a value of zero.
+  2.)Afterwards, all remaining two values in the matrix are replaced with a value of -1.
+  
   Prerequisites:
     The "readxl", "tidyr" and "dplyr" R packages are required to successfully run this code.	
 
