@@ -16,7 +16,7 @@ group <- pull((fill(x_data, 1, .direction = "down")[1:(nrow(x_data)-1),]), var =
 data_tb2 <- read_excel(xfile_name, sheet=sheet_name[1], range="R4C3:R58C22", 
                       col_names = FALSE)
 
-v1 <- pull(data_tb2, X__1) #creates a single vector from the tbl
+v1 <- pull(data_tb2, X__2) #creates a single vector from the tbl
 ####Becomes Function paleo_f.R
 v1_fun<-function(runs){
   
@@ -32,5 +32,7 @@ runs[1:54][runs[1:54]==-888] <- 0
 runs[1:54][runs[1:54]==-777] <- 0
 runs[1:54][runs[1:54]==2] <- -1
 
-return(v1)
+return(runs)
+
 }
+v1_fun(runs=v1)
