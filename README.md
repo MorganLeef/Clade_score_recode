@@ -4,14 +4,15 @@ Included:
   Assignment description
   File Description
   Getting Started
-    Challenges
-    Prerequisites necessary
+    Second Stage
+	Final Stage
+    Prerequisites
 
 Assignment Details:
 The purpose of this project is to automate the preparation of James Lamdsdell's .xlsx files for recoding.
 
 File Description:
-These Excel files (Matrices 461-470.xlsx) consist of multiple sheets of numerical matrix data that will be recoded based on a template "Ancestor" row on the bottom of each sheet.
+These Excel files (Matrices 461-470(1).xlsx) consist of multiple sheets of numerical matrix data that will be recoded based on a template "Ancestor" row on the bottom of each sheet.
 
 Getting Started:
   For this stage of the project, vectors and matrices are extracted from the original files, so that they can be inserted into functions for the second stage of the project. 
@@ -20,9 +21,25 @@ Getting Started:
   The second stage of the project implements code that will be tested on a single column of the data, assuring that it will perform the desired tasks accordingly. This involves:
   1.)Searching the template row for a value of one or two, and when found, the code will replace all the matching values in the corrosponding column with a value of zero.
   2.)Afterwards, all remaining two values in the matrix are replaced with a value of -1.
+	Example code: 	if (v1[55]==1) {
+                       v1[1:54][v1[1:54]==1 ] <- -888 #Changes 1 values to placeholder (-888)
+                       } else {if (v1[55]==2)
+                     v1[1:54][v1[1:54]==2 ] <- -777 #OR changes 2 valuse to placeholder (-777)
+                     }
+
+                     v1[1:54][v1[1:54]==0] <- v1[55] #Changes all 0 values with value in last row (ancestor)
+
+                     v1[1:54][v1[1:54]==-888] <- 0
+                     v1[1:54][v1[1:54]==-777] <- 0
+                     v1[1:54][v1[1:54]==2] <- -1
+  The above conditional will ultimateley be implemented into a function.
+  
+  The third stage of the project uses functions to easily perform all of the tasks described in the second stage. With a separate R script, these functions can be sourced, and finally, implemented on any column of 
+  the data with "apply". Example: newdata <- apply(data_tb2, (column number),v1_fun) where data_tb2 is the adjusted matrix created in the first stage, and v1_fun is the function created in the second stage that changes all
+  current data values based on the specifications established in the second stage.
   
   Prerequisites:
-    The "readxl", "tidyr" and "dplyr" R packages are required to successfully run this code.	
+    The "readxl", "tidyr","tidyverse", and "dplyr" R packages are required to successfully run this code.	
 
 Authors:
 Morgan Leef
