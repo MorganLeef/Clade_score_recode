@@ -1,9 +1,12 @@
 #R script that reads JL's excel file and extracts information including first column, species name, and group name.   
-#Simple solution for one and three cols of JL data
+
 rm(list=ls())
 
-library(readxl) #included in tidyverse
+library(readxl) 
 library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(plyr)
 
 #Read in one of Lamsdell's excel files and reshape
 xfile_name <- "Matrices 461-470(1).xlsx"
@@ -14,11 +17,11 @@ n_sheets <- length(sheets)
 species <- rbind(x_data[2:55,2], "ancestor")
 group <- pull((fill(x_data, 1, .direction = "down")[1:(nrow(x_data)-1),]), var = 1)
 
-data_tb2 <- read_excel(xfile_name, sheet=sheet_name[1], range="R4C3:R58C22", 
-                      col_names = FALSE)
+data_tb2 <- read_excel(xfile_name, sheet=sheet_name[1], range="R4C3:R58C22",col_names = FALSE)
 
 v1 <- pull(data_tb2, X__2) #creates a single vector from the tbl
 ####Becomes Function paleo_f.R
+#Creates a function that changes values based on James L desires for each column
 v1_fun<-function(runs){
   
 if (runs[55]==1) {
