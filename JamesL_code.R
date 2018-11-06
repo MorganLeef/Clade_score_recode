@@ -4,16 +4,15 @@ rm(list=ls())
 
 library(readxl) 
 library(tidyverse)
-library(dplyr)
 library(tidyr)
-library(plyr)
+
 
 #Read in one of Lamsdell's excel files and reshape
 xfile_name <- "Matrices 461-470(1).xlsx"
 
 x_data <- read_excel(xfile_name)
 sheet_name <- excel_sheets(xfile_name)
-n_sheets <- length(sheets)
+n_sheets <- length(sheet_name)
 species <- rbind(x_data[2:55,2], "ancestor")
 group <- pull((fill(x_data, 1, .direction = "down")[1:(nrow(x_data)-1),]), var = 1)
 
