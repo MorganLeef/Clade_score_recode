@@ -1,6 +1,6 @@
 #This new R script sources the code from James L's original code, and uses apply to run the function changing the valuse for any specified column in the matrix
 
-#This line of code deletes everything in the environment. 
+#Deletes everything in the environment. 
 rm(list=ls())
 
 #Source code and function from James L R script
