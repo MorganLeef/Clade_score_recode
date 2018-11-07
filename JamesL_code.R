@@ -1,7 +1,9 @@
 #R script that reads JL's excel file and extracts information including first column, species name, and group name.   
+#Function that can be called to be appied to all of the matrix. 
 
+#Deletes everything in the enviroment. 
 rm(list=ls())
-
+#This loads packages need for the script. 
 library(readxl) 
 library(tidyverse)
 library(tidyr)
@@ -10,6 +12,7 @@ library(tidyr)
 #Read in one of Lamsdell's excel files and reshape
 xfile_name <- "Matrices 461-470(1).xlsx"
 
+#Extracts the read in data into different vectors. 
 x_data <- read_excel(xfile_name)
 sheet_name <- excel_sheets(xfile_name)
 n_sheets <- length(sheet_name)
@@ -38,4 +41,5 @@ runs[1:54][runs[1:54]==2] <- -1
 return(runs)
 
 }
+#Calling the function and telling it that runs is equal to the vector v1. 
 v1_fun(runs=v1)
