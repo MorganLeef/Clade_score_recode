@@ -42,7 +42,7 @@ Getting Started:
     The "readxl", "tidyr","tidyverse", and "dplyr" R packages are required to successfully run this code.	
 
 Authors:
-Morgan Leef
+Morgan Leef and
 Amanda Adams
 =======
 This code will use the R package readxl to read all of the data contained in XLS files given to us by James L.(Examples included here are...) The code will read the XL files and extracts the first column, species, excels sheets and group names. Then using a pulled first collumn to recode the collumns.  
