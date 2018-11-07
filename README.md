@@ -89,57 +89,57 @@ The group names are:
 
 
 The species names are:
-•	Lunataspis_aurora
-•	Kasibelinurus_amicorum
-•	Kasibelinurus_randalli
-•	Bellinurus_trilobitoides
-•	Bellinurus_bellulus
-•	Bellinurus_truemanii
-•	Bellinurus_reginae
-•	Bellinurus_arcuatus
-•	Bellinurus_lunatus
-•	Euproops_danae
-•	Euproops_sp
-•	Euproops_anthrax
-•	Euproops_mariae
-•	Euproops_rotundatus
-•	Liomesaspis_laevis
-•	Anacontium_carpenteri
-•	Alanops_magnifica
-•	Pringlia_birtwelli
-•	Bellinuroopsis_rossicus
-•	Rolfeia_fouldenensis
-•	Valloisella_lievensis
-•	Paleolimulus_woodae
-•	Paleolimulus_kunguricus
-•	Paleolimulus_signatus
-•	Xaniopyramis_linseyi
-•	Paleolimulus_longispinus
-•	Panduralimulus_babcocki
-•	Psammolimulus_gottingensis
-•	Limulitella_tejraensis
-•	Limulitella_bronni
-•	Paleolimulus_fuchsbergensis
-•	Dubbolimulus_peetae
-•	Vaderlimulus_tricki
-•	Austrolimulus_fletcheri
-•	Limulitella_henkeli
-•	Yunnanolimulus_luopingensis
-•	Tarracolimulus_rieki
-•	Limulitella_vicensis
-•	Mesolimulus_crespelli
-•	Mesolimulus_sp
-•	Mesolimulus_walchi
-•	Limulus_woodwardi
-•	Casterolimulus_kletti
-•	Vicatlimulus_mcqueeni
-•	Heterolimulus_gadeai
-•	Carcinoscorpius_rotundicauda
-•	Tachypleus_gigas
-•	Tachypleus_decheni
-•	Tachypleus_syriacus
-•	Tachypleus_tridentatus
-•	Limulus_darwini
-•	Crenatolimulus_paluxyensis
-•	Limulus_coffini
-•	Limulus_polyphemus
+•	Lunataspis aurora
+•	Kasibelinurus amicorum
+•	Kasibelinurus randalli
+•	Bellinurus trilobitoides
+•	Bellinurus bellulus
+•	Bellinurus truemanii
+•	Bellinurus reginae
+•	Bellinurus arcuatus
+•	Bellinurus lunatus
+•	Euproops danae
+•	Euproops sp
+•	Euproops anthrax
+•	Euproops mariae
+•	Euproops rotundatus
+•	Liomesaspis laevis
+•	Anacontium carpenteri
+•	Alanops magnifica
+•	Pringlia birtwelli
+•	Bellinuroopsis rossicus
+•	Rolfeia fouldenensis
+•	Valloisella lievensis
+•	Paleolimulus woodae
+•	Paleolimulus kunguricus
+•	Paleolimulus signatus
+•	Xaniopyramis linseyi
+•	Paleolimulus longispinus
+•	Panduralimulus babcocki
+•	Psammolimulus gottingensis
+•	Limulitella tejraensis
+•	Limulitella bronni
+•	Paleolimulus fuchsbergensis
+•	Dubbolimulus peetae
+•	Vaderlimulus tricki
+•	Austrolimulus fletcheri
+•	Limulitella henkeli
+•	Yunnanolimulus luopingensis
+•	Tarracolimulus rieki
+•	Limulitella vicensis
+•	Mesolimulus crespelli
+•	Mesolimulus sp
+•	Mesolimulus walchi
+•	Limulus woodwardi
+•	Casterolimulus kletti
+•	Vicatlimulus mcqueeni
+•	Heterolimulus gadeai
+•	Carcinoscorpius rotundicauda
+•	Tachypleus gigas
+•	Tachypleus decheni
+•	Tachypleus syriacus
+•	Tachypleus tridentatus
+•	Limulus darwini
+•	Crenatolimulus paluxyensis
+•	Limulus coffini
+•	Limulus polyphemus
