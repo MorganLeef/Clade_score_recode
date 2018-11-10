@@ -3,16 +3,17 @@
 
 #Deletes everything in the enviroment. 
 rm(list=ls())
-#This loads packages need for the script. 
+#This loads packages needed for the script. 
 library(readxl) 
 library(tidyverse)
 library(tidyr)
 
 files <- list.files("~/Desktop/ESDA/exercises/JLR_project/raw_data")
-for (x in (files)) 
+
+for (x in files) {
 
 #Read in one of Lamsdell's excel files and reshape
-xfile_name <- "Matrices 461-470.xlsx"
+xfile_name <- x
 
 #Extracts the read in data into different vectors. 
 x_data <- read_excel(xfile_name)
@@ -27,11 +28,12 @@ orig_column <- pull(data_tb, X__1) #creates a single vector from the tbl
 #Creates a function that changes values based on James L desires for each column
 #This new R script sources the code from James L's original code, and uses apply to run the function changing the valuse for any specified column in the matrix
 
-
 #Source code and function from James L R script
 source("recoding_column_function.R")
 
 #Apply this function to any specified column
-x <- apply(data_tb, 2, recoding_fun)
-x <- print(files[x])
+assign(paste0(x), apply(data_tb, 2, recoding_fun))
+
+}
+
 
