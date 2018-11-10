@@ -8,9 +8,11 @@ library(readxl)
 library(tidyverse)
 library(tidyr)
 
+files <- list.files("~/Desktop/ESDA/exercises/JLR_project/raw_data")
+for (x in (files)) 
 
 #Read in one of Lamsdell's excel files and reshape
-xfile_name <- "Matrices 461-470(1).xlsx"
+xfile_name <- "Matrices 461-470.xlsx"
 
 #Extracts the read in data into different vectors. 
 x_data <- read_excel(xfile_name)
@@ -30,4 +32,6 @@ orig_column <- pull(data_tb, X__1) #creates a single vector from the tbl
 source("recoding_column_function.R")
 
 #Apply this function to any specified column
-recoded <- apply(data_tb, 2, recoding_fun)
+x <- apply(data_tb, 2, recoding_fun)
+x <- print(files[x])
+
