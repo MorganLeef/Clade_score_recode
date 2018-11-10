@@ -31,9 +31,7 @@ orig_column <- pull(data_tb, X__1) #creates a single vector from the tbl
 #Source code and function from James L R script
 source("recoding_column_function.R")
 
-#Apply this function to any specified column
-assign(paste0(x), apply(data_tb, 2, recoding_fun))
-
+assign(paste0((strsplit(x,"-")[[1]]),"d"), apply(data_tb, 2, recoding_fun))
 }
 
 
