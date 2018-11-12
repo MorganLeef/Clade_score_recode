@@ -25,7 +25,11 @@ orig_column <- pull(data_tb, X__1)
 source("recoding_column_function.R")
 
 assign(paste0((x), "d"), apply(data_tb, 2, recoding_fun))
+dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
 }}
 
-
+for (y in dataframe_list) {
+assign(y, (cbind(get(y), apply((get(y)[,]), 1, sum, na.rm=T))))
+ assign(y, (cbind(get(y), (get(y)[,21])/(20))))
+   }
 
