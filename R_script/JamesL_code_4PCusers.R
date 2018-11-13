@@ -36,3 +36,10 @@ for (y in dataframe_list) {
 assign(y, (cbind(get(y), apply((get(y)[,]), 1, sum, na.rm=T))))
  assign(y, (cbind(get(y), (get(y)[,21])/(20))))
 }
+
+
+#Possible alternative way to calculate means
+recoded_data_tb<- matrix((apply(data_tb, 2, recoding_fun)), ncol = 22, nrow = 55) 
+score<-matrix(rowMeans(recoded_data_tb, na.rm = FALSE, dims = 1), ncol = 1, nrow = 55)
+
+
