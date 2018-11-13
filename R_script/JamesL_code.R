@@ -26,12 +26,12 @@ orig_column <- pull(data_tb, X__1)
 #Source recoding column function that recodes values in a matrix
 source("recoding_column_function.R")
 
-#Applies the recoding function to each sheet of a workbook
+#Applies the recoding function to each matrix
 assign(paste0((x), "d"), apply(data_tb, 2, recoding_fun))
 dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
 }}
 
-#Calculates means for each species (Total of values divided by the number of columns)
+#Calculates scores and weighted scores (means for each species (total of values divided by the number of columns))
 for (y in dataframe_list) {
 assign(y, (cbind(get(y), apply((get(y)[,]), 1, sum, na.rm=T))))
  assign(y, (cbind(get(y), (get(y)[,21])/(20))))
