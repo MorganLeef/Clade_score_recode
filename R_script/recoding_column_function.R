@@ -1,3 +1,4 @@
+#Function that changes values in matrix based on James L specifications
 recoding_fun <-function(orig_column){
   
   if (orig_column[55]==1) {

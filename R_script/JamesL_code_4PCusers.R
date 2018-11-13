@@ -7,7 +7,7 @@ library(tidyverse)
 library(tidyr)
 
 #Provides path to Matrices files, and creates an object
-files <- list.files("~/Desktop/ESDA/exercises/JLR_project/raw_data")
+files <- list.files("../raw_data")
 
 #Loops code that partitions each file for reformatting in preparation for the recoding function
 for (i in files) {
@@ -35,5 +35,4 @@ dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
 for (y in dataframe_list) {
 assign(y, (cbind(get(y), apply((get(y)[,]), 1, sum, na.rm=T))))
  assign(y, (cbind(get(y), (get(y)[,21])/(20))))
-   }
-
+}
