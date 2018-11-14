@@ -31,8 +31,10 @@ assign(paste0((x), "d"), apply(data_tb, 2, recoding_fun))
 dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
 }}
 
-#Creates and add the sum to Matrix 46d
-`Matrix 461d`<-cbind.data.frame(`Matrix 461d`,Sum=rowSums(`Matrix 461d`))
 
-#Creates and adds the sum to Matrix 46d
-`Matrix 461d`<-cbind.data.frame(`Matrix 461d`, Mean=rowMeans(`Matrix 461d`))
+#Creates and adds the mean to Matrix 46d
+`Matrix 461d2`<-cbind.data.frame(`Matrix 461d`, Mean=rowMeans(`Matrix 461d`))
+
+#Creates and add the sum to Matrix 46d
+`Matrix 461d2`<-cbind.data.frame(`Matrix 461d`,Sum=rowSums(`Matrix 461d`))
+
