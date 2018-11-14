@@ -52,7 +52,7 @@ The above conditional will ultimateley be implemented into a function.
   The last set of code provides summary data for each species. It calculates the means for each species, by dividing the total value for each species by the number of columns.
   
   Prerequisites:
-    The "readxl", "tidyr","tidyverse", and "dplyr" R packages are required to successfully run this code.	
+    The "readxl", "tidyr",and "tidyverse" R packages are required to successfully run this code.	
 
 Authors:
 Morgan Leef,
@@ -75,15 +75,17 @@ Read_xlsx()=this part of the code that reads the excel file.
 
 Excel_sheets()=this part of the code help create a vector for all the sheet names. 
 
-pull()= pulling the data from tibble and turing it into a vector.
-
-Na.omit()=this function omits all of the N/A from the column. 
+pull()= pulling the data from tibble and turing it into a vector. 
 
 Rep()=this replicates the information in the () as many times as someone would want.
 
+assign()
     
+grep()
 
+cbind()
 
+apply()
 
 
 
@@ -111,110 +113,56 @@ This code will use Matrices 461-470(1).xlsx.
 ### The species names are:
 ```
 •	Lunataspis aurora
-
 •	Kasibelinurus amicorum
-
 •	Kasibelinurus randalli
-
 •	Bellinurus trilobitoides
-
 •	Bellinurus bellulus
-
 •	Bellinurus truemanii
-
 •	Bellinurus reginae
-
 •	Bellinurus arcuatus
-
 •	Bellinurus lunatus
-
 •	Euproops danae
-
 •	Euproops sp
-
 •	Euproops anthrax
-
 •	Euproops mariae
-
 •	Euproops rotundatus
-
 •	Liomesaspis laevis
-
 •	Anacontium carpenteri
-
 •	Alanops magnifica
-
 •	Pringlia birtwelli
-
 •	Bellinuroopsis rossicus
-
 •	Rolfeia fouldenensis
-
 •	Valloisella lievensis
-
 •	Paleolimulus woodae
-
 •	Paleolimulus kunguricus
-
 •	Paleolimulus signatus
-
 •	Xaniopyramis linseyi
-
 •	Paleolimulus longispinus
-
 •	Panduralimulus babcocki
-
 •	Psammolimulus gottingensis
-
 •	Limulitella tejraensis
-
 •	Limulitella bronni
-
 •	Paleolimulus fuchsbergensis
-
 •	Dubbolimulus peetae
-
 •	Vaderlimulus tricki
-
 •	Austrolimulus fletcheri
-
 •	Limulitella henkeli
-
 •	Yunnanolimulus luopingensis
-
 •	Tarracolimulus rieki
-
 •	Limulitella vicensis
-
 •	Mesolimulus crespelli
-
-•	Mesolimulus sp
-
-•	Mesolimulus walchi
-
+•	Mesolimulus sp•	Mesolimulus walchi
 •	Limulus woodwardi
-
 •	Casterolimulus kletti
-
 •	Vicatlimulus mcqueeni
-
 •	Heterolimulus gadeai
-
 •	Carcinoscorpius rotundicauda
-
 •	Tachypleus gigas
-
 •	Tachypleus decheni
-
 •	Tachypleus syriacus
-
 •	Tachypleus tridentatus
-
 •	Limulus darwini
-
 •	Crenatolimulus paluxyensis
-
 •	Limulus coffini
-
 •	Limulus polyphemus
 ```
