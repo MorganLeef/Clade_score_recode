@@ -7,7 +7,7 @@ library(readxl)
 library(tidyverse)
 library(tidyr)
 
-files <- list.files("~/Desktop/ESDA/exercises/JLR_project/raw_data")
+files <- list.files("../raw_data")
 
 for (i in files) {
   
