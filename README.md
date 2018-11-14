@@ -28,6 +28,7 @@ These Excel files (Matrices 461-470(1).xlsx) consist of multiple sheets of numer
   2.)Afterwards, all remaining two values in the matrix are replaced with a value of -1.
 			
 			```
+			
 			Example code: 	if (orig_column[55]==1) {
 		orig_column[1:54][orig_column[1:54]==1 ] <- -888 #will be changed to 0
 		} else if (orig_column[55]==2) {
@@ -39,6 +40,8 @@ These Excel files (Matrices 461-470(1).xlsx) consist of multiple sheets of numer
 		orig_column[1:54][orig_column[1:54]==2] <- -1 #change all remaining 2's to -1
 		orig_column[55] <- 0
 		return(orig_column)
+		
+		
 		```
 		The above conditional will ultimateley be implemented into a function.
   
