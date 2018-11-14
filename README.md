@@ -27,8 +27,7 @@ These Excel files (Matrices 461-470(1).xlsx) consist of multiple sheets of numer
   1.)Searching the template row for a value of one or two, and when found, the code will replace all the matching values in the corrosponding column with a value of zero.
   2.)Afterwards, all remaining two values in the matrix are replaced with a value of -1.
 			
-			```
-			
+		```R 
 			Example code: 	if (orig_column[55]==1) {
 		orig_column[1:54][orig_column[1:54]==1 ] <- -888 #will be changed to 0
 		} else if (orig_column[55]==2) {
@@ -39,11 +38,11 @@ These Excel files (Matrices 461-470(1).xlsx) consist of multiple sheets of numer
 		orig_column[1:54][orig_column[1:54]==-777] <- 0 #chnage placeholer value to 0
 		orig_column[1:54][orig_column[1:54]==2] <- -1 #change all remaining 2's to -1
 		orig_column[55] <- 0
-		return(orig_column)
-		
-		
+		return(orig_column) 
 		```
-		The above conditional will ultimateley be implemented into a function.
+		
+		
+The above conditional will ultimateley be implemented into a function.
   
   The third stage of the project uses functions to easily perform all of the tasks described in the second stage. With a separate R script, these functions can be sourced, and finally, implemented on any column of 
   the data with "apply". Example: newdata <- apply(data_tb2, (column number),recoding_fun) where data_tb2 is the adjusted matrix created in the first stage, and recoding_fun is the function created in the second stage that changes all
