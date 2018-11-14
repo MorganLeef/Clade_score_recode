@@ -93,8 +93,8 @@ There are two excel files that are being used for the overall problem. The two f
 
 This code will use Matrices 461-470(1).xlsx. 
 
-The group names are:
-
+### The group names are:
+```
 •	Xiphosura
 
 •	Bellinurina
@@ -106,10 +106,10 @@ The group names are:
 •	Austrolimulidae
 
 •	Limulidae
+```
 
-
-The species names are:
-
+### The species names are:
+```
 •	Lunataspis aurora
 
 •	Kasibelinurus amicorum
@@ -217,3 +217,4 @@ The species names are:
 •	Limulus coffini
 
 •	Limulus polyphemus
+```
