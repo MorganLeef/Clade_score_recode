@@ -55,11 +55,6 @@ The above conditional has been implemented into a function.
   The last set of code provides summary data for each species. It calculates the means for each species, by dividing the total value for each species by the number of columns.
   
   
-
-Authors: _MOVE TO BOTTOM_
-Morgan Leef,
-Amanda Adams and 
-Autum Downey
 =======
 This code will use the R package readxl to read all of the data contained in XLS files given to us by James L.(Examples included here are...) The code will read the XL files and extracts the first column, species, excels sheets and group names. Then using a pulled first collumn to recode the collumns.  
 
@@ -119,3 +114,8 @@ This code will use Matrices 461-470(1).xlsx.
 •	Kasibelinurus randalli
 •	Bellinurus trilobitoides
 ```
+
+Authors:
+Morgan Leef,
+Amanda Adams and 
+Autum Downey
