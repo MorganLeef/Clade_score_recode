@@ -115,7 +115,7 @@ This code will use Matrices 461-470(1).xlsx.
 •	Bellinurus trilobitoides
 ```
 
-Authors:
+## Authors:
 Morgan Leef,
 Amanda Adams and 
 Autum Downey
