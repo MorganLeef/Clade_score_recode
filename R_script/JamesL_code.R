@@ -43,7 +43,7 @@ summary <- cbind(summary,v)
 summary <- summary [,-1]
 colnames(summary) <- dataframe_list
 #added the species to the summery dataset
-summary<-cbind(species,summary)
+ssummary<-cbind(group,species,summary)
 
 
 
