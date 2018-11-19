@@ -7,7 +7,7 @@ library(tidyverse)
 library(tidyr)
 
 #Provides path to Matrices files, and creates an object
-files <- list.files("~/Desktop/ESDA/exercises/JLR_project/raw_data")
+files <- list.files("../raw_data")
 
 #Loops code that partitions each file for reformatting in preparation for the recoding function
 for (i in files) {
