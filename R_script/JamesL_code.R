@@ -39,8 +39,14 @@ for (y in dataframe_list) {
 v <- rowMeans(get(y))
 summary <- cbind(summary,v)
 }
+
 summary <- summary [,-1]
 colnames(summary) <- dataframe_list
+
+
+
+
+
 
 
 ##This is a great leap forward.  I had to make some changes to get it to run in its current 
