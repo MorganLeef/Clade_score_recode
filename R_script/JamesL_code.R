@@ -34,7 +34,7 @@ for (xfile_name in files) {
 #Calculates scores and weighted scores (means for each species (total of values divided by the number of columns))
 for (y in dataframe_list) {
  assign(y, (cbind(get(y), Sum=(apply((get(y)[,]), 1, sum, na.rm=T)))))
- assign(y, (cbind(get(y), RowMean=((get(y)[,21])/(20)))))
+ assign(y, (cbind(get(y), rowMeans=((get(y)[,21])/(20)))))
 }
 
 ##This is a great leap forward.  I had to make some changes to get it to run in its current 
