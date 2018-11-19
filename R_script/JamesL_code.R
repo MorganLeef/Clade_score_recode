@@ -1,5 +1,5 @@
 
-#Delaetes current working enviroment. 
+#Deletes current working enviroment. 
 rm(list=ls())
 #load packages needed for script. 
 library(readxl) 
