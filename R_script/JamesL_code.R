@@ -36,7 +36,7 @@ for (xfile_name in files) {
 
 #Calculates scores and weighted scores (means for each species (total of values divided by the number of columns))
 for (y in dataframe_list) {
-assign(y, (cbind(get(y), "mean"=rowMeans(get(y)))))
+assign(y, (cbind(get(y), "rowMeans"=rowMeans(get(y)))))
 assign(y, cbind(species, get(y)))
  }
 
