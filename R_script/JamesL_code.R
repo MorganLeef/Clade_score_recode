@@ -40,6 +40,8 @@ assign(y, (cbind(get(y), "mean"=rowMeans(get(y)))))
 assign(y, cbind(species, get(y)))
  }
 
+
+#Mean<-(get(y)[,22])
 ##This is a great leap forward.  I had to make some changes to get it to run in its current 
 ##directory.  Also, you will want to find a way to label the summary cols appropriately
 ##and get the final rowMeans into a single dataframe so that you can summarize by group and 
