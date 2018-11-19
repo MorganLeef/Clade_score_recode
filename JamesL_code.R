@@ -38,5 +38,6 @@ for (xfile_name in files) {
 for (y in dataframe_list) {
 assign(y, (cbind(get(y), "rowMeans"=rowMeans(get(y)))))
 assign(y, cbind(species, get(y)))
+V=data.frame(get(y))
  }
 
