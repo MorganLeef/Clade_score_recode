@@ -33,15 +33,14 @@ for (xfile_name in files) {
     dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
     }
   }
-
+summary <- matrix(nrow = 55)
 #Calculates scores and weighted scores (means for each species (total of values divided by the number of columns))
 for (y in dataframe_list) {
-assign(y, (cbind(get(y), "mean"=rowMeans(get(y)))))
-assign(y, cbind(species, get(y)))
- }
-
-
-
+v <- rowMeans(get(y))
+summary <- cbind(summary,v)
+}
+summary <- summary [,-1]
+colnames(summary) <- dataframe_list
 
 
 ##This is a great leap forward.  I had to make some changes to get it to run in its current 
