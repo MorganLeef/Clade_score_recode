@@ -70,7 +70,9 @@ Grand_clade_scores <- cbind(Xiphosura, Bellinurina, Limulina, Paleolimulidea, Au
 summary<-cbind(group,species,summary)
 colnames(summary)[colnames(summary)=="X__2"] <- "species"
 
-#writes it as a csv
-write.csv(Grand_clade_scores, file = "Grand_clade_scores.csv")
-write.csv(summary, file = "summary.csv")
+# A loop that writes all the files as csv's. 
+csvlist<-list(rowMeansM=summary,Grand_clade_score=Grand_clade_scores,Limulidae=Limulidae, Limulina=Limulina,Austrolimulidae= Austrolimulidae,Bellinurina=Bellinurina,Paleolimulidea=Paleolimulidea,Xiphosura=Xiphosura)
+for(i in names(csvlist)){
+  write.csv(csvlist[[i]], paste0(i,".csv"))
+}
 
