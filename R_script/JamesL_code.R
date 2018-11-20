@@ -44,7 +44,30 @@ summary <- cbind(summary,v)
 summary <- summary [,-1]
 colnames(summary) <- dataframe_list
 
-##This is a great leap forward.  I had to make some changes to get it to run in its current 
-##directory.  Also, you will want to find a way to label the summary cols appropriately
-##and get the final rowMeans into a single dataframe so that you can summarize by group and 
-##clade.  That's for next week!
+#creates clade scores for each species
+Xiphosura <- as.data.frame(colMeans(summary[1:54,]))
+colnames(Xiphosura)[colnames(Xiphosura)=="colMeans(summary)"] <- "Xiphosura clade score"
+
+
+Bellinurina <- as.data.frame(colMeans(summary[12:18,], na.rm=TRUE))
+colnames(Bellinurina)[colnames(Bellinurina)=="colMeans(summary[12:18, ], na.rm = TRUE)"] <- "Bellinurina clade score"
+
+Limulina <- as.data.frame(colMeans(summary[19:54,], na.rm=TRUE))
+colnames(Limulina)[colnames(Limulina)=="colMeans(summary[19:54, ], na.rm = TRUE)"] <- "Limulina clade score"
+
+Paleolimulidea <- as.data.frame(colMeans(summary[22:25,], na.rm=TRUE))
+colnames(Paleolimulidea)[colnames(Paleolimulidea)=="colMeans(summary[22:25, ], na.rm = TRUE)"] <- "Paleolimulidea clade score"
+
+Austrolimulidae <- as.data.frame(colMeans(summary[26:34,], na.rm=TRUE))
+colnames(Austrolimulidae)[colnames(Austrolimulidae)=="colMeans(summary[26:34, ], na.rm = TRUE)"] <- "Austrolimulidae clade score"
+
+Limulidae <- as.data.frame(colMeans(summary[35:54,], na.rm=TRUE))
+colnames(Limulidae)[colnames(Limulidae)=="colMeans(summary[35:54, ], na.rm = TRUE)"] <- "Limulidae clade score"
+
+#added the species to the summery dataset
+summary<-cbind(group,species,summary)
+colnames(summary)[colnames(summary)=="X__2"] <- "species"
+
+
+
+
