@@ -70,4 +70,5 @@ Grand_clade_scores <- cbind(Xiphosura, Bellinurina, Limulina, Paleolimulidea, Au
 summary<-cbind(group,species,summary)
 colnames(summary)[colnames(summary)=="X__2"] <- "species"
 #writes it as a csv
-write.csv(Grand_clade_scores, file = "Grand_clade_scores.csv
+write.csv(Grand_clade_scores, file = "Grand_clade_scores.csv")
+write.csv(summary, file = "summary.csv")
