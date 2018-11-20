@@ -15,13 +15,13 @@ files <- list.files("./raw_data")
 #Loops code that partitions each file for reformatting in preparation for the recoding function
 for (xfile_name in files) {
 
-  x_data <- read_excel(paste0("R_script/", xfile_name)) #you are not in your WD
-  sheet_name <- excel_sheets(paste0("R_script/", xfile_name)) #you are not in your WD
+  x_data <- read_excel(paste0("raw_data/", xfile_name)) #you are not in your WD
+  sheet_name <- excel_sheets(paste0("raw_data/", xfile_name)) #you are not in your WD
   species <- rbind(x_data[2:55,2], "ancestor")
   group <- pull((fill(x_data, 1, .direction = "down")[1:(nrow(x_data)-1),]), var = 1)
 
     for (x in sheet_name) {
-    data_tb <- read_excel(paste0("R_script/", xfile_name), sheet=x[1], range="R4C3:R58C22",col_names = FALSE)
+    data_tb <- read_excel(paste0("raw_data/", xfile_name), sheet=x[1], range="R4C3:R58C22",col_names = FALSE)
     
     orig_column <- pull(data_tb, X__1) 
   
