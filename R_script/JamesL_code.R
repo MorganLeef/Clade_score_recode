@@ -71,7 +71,7 @@ summary<-cbind(group,species,summary)
 colnames(summary)[colnames(summary)=="X__2"] <- "species"
 
 # A loop that writes all the files as csv's. 
-csvlist<-list(rowMeansM=summary,Grand_clade_score=Grand_clade_scores,Limulidae=Limulidae, Limulina=Limulina,Austrolimulidae= Austrolimulidae,Bellinurina=Bellinurina,Paleolimulidea=Paleolimulidea,Xiphosura=Xiphosura)
+csvlist<-list(rowMeansM=summary,Grand_clade_score=Grand_clade_scores)
 for(i in names(csvlist)){
   write.csv(csvlist[[i]], paste0(i,".csv"))
 }
