@@ -32,7 +32,8 @@ for (xfile_name in files) {
     assign(paste0((x), "d"), apply(data_tb, 2, recoding_fun))
     dataframe_list = grep("\\w+\\s\\w+d", ls(), value=T)
     }
-  }
+}
+
 summary <- matrix(nrow = 55)
 #Calculates scores and weighted scores (means for each species (total of values divided by the number of columns))
 for (y in dataframe_list) {
@@ -42,12 +43,6 @@ summary <- cbind(summary,v)
 
 summary <- summary [,-1]
 colnames(summary) <- dataframe_list
-
-
-
-
-
-
 
 ##This is a great leap forward.  I had to make some changes to get it to run in its current 
 ##directory.  Also, you will want to find a way to label the summary cols appropriately
