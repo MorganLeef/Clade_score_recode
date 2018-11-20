@@ -46,7 +46,7 @@ colnames(summary) <- dataframe_list
 
 #creates clade scores for each species
 Xiphosura <- as.data.frame(colMeans(summary[1:54,]))
-colnames(Xiphosura)[colnames(Xiphosura)=="colMeans(summary)"] <- "Xiphosura clade score"
+colnames(Xiphosura)[colnames(Xiphosura)=="colMeans(summary[1:54, ])"] <- "Xiphosura clade score"
 
 
 Bellinurina <- as.data.frame(colMeans(summary[12:18,], na.rm=TRUE))
@@ -64,9 +64,12 @@ colnames(Austrolimulidae)[colnames(Austrolimulidae)=="colMeans(summary[26:34, ],
 Limulidae <- as.data.frame(colMeans(summary[35:54,], na.rm=TRUE))
 colnames(Limulidae)[colnames(Limulidae)=="colMeans(summary[35:54, ], na.rm = TRUE)"] <- "Limulidae clade score"
 
+Grand_clade_scores <- cbind(Xiphosura, Bellinurina, Limulina, Paleolimulidea, Austrolimulidae, Limulidae)
+
 #added the species to the summery dataset
 summary<-cbind(group,species,summary)
 colnames(summary)[colnames(summary)=="X__2"] <- "species"
+
 
 
 
