@@ -54,7 +54,7 @@ The above conditional has been implemented into a function.
   *Edit - The most recent version applies the function to each matrix (data_tb) in each sheet of the workbook, for multiple files
   
   
-  The last set of code provides summary data for each species. It calculates the means for each species, by dividing the total value for   each species by the number of columns.
+  The last set of code provides summary data for each species. It calculates the means for each species, by dividing the total value for   each species by the number of columns. Means were also calculated for those values, separated by species group, and called a Clade score. These special means were calculated for each species group in each sheet. The files were then written to .csv files, for convenience.  
   
 
 ## Functions/packages used in this R script:
