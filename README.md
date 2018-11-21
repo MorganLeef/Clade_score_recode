@@ -8,7 +8,7 @@
     Second Stage
 	Third Stage
 	Summary Data
-+Required Packages & used functions
+* Required Packages & used functions
 * Final CSV files
 	
     
