@@ -45,6 +45,7 @@ summary <- summary [,-1]
 colnames(summary) <- dataframe_list
 
 #creates clade scores for each species
+##Could be more efficient/reliable with a group by or an apply
 Xiphosura <- as.data.frame(colMeans(summary[1:54,]))
 colnames(Xiphosura)[colnames(Xiphosura)=="colMeans(summary[1:54, ])"] <- "Xiphosura clade score"
 
@@ -66,7 +67,8 @@ colnames(Limulidae)[colnames(Limulidae)=="colMeans(summary[35:54, ], na.rm = TRU
 
 Grand_clade_scores <- cbind(Xiphosura, Bellinurina, Limulina, Paleolimulidea, Austrolimulidae, Limulidae)
 
-#added the species to the summery dataset
+#added the species to the summery dataset 
+##Could be moved up to where summary is made @ L46
 summary<-cbind(group,species,summary)
 colnames(summary)[colnames(summary)=="X__2"] <- "species"
 
@@ -75,4 +77,4 @@ csvlist<-list(rowMeansM=summary,Grand_clade_score=Grand_clade_scores)
 for(i in names(csvlist)){
   write.csv(csvlist[[i]], paste0(i,".csv"))
 }
-
+##Great - could be improved with formatting the final values (rounding etc)
